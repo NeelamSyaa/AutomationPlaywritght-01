@@ -16,7 +16,8 @@ public class PlaywrightFactory {
 	public static Page initBrowser() {
 		
 		ConfigReader cg =  new ConfigReader();
-		
+		  String browserName = cg.getProperty("browser");
+		    boolean headless = Boolean.parseBoolean(cg.getProperty("headless"));
 		Playwright p =  Playwright.create();
 		       browser = p.chromium().launch(
 		    		 new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(1500).setArgs(Arrays.asList("--start-maximized")));

@@ -12,7 +12,8 @@ public class LoginPage  {
 	
     private String username  =   "#email";
     private String Password  = "#password";
-    private String login  ="//button[contains(text(),'Login')]";
+     private String login  ="//button[contains(text(),'Login')]";
+    
     
     
     public void  loginbtn( String  u, String p) {
