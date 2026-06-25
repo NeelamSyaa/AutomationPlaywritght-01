@@ -1,5 +1,7 @@
 package LoginTest;
 
+import org.testng.annotations.Test;
+
 import baseclass.BaseTest;
 import pageclass.EmployeePAge;
 import pageclass.LoginPage;
@@ -7,7 +9,7 @@ import utils.ConfigReader;
 
 public class EmployeeTest  extends BaseTest {
 
-	
+	@Test
 	public void  empdata() {
 		ConfigReader   CR = new ConfigReader();
 		
