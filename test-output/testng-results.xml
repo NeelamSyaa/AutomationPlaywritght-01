@@ -1,84 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-24T18:03:20 IST" name="Default suite" finished-at="2026-06-24T18:03:35 IST" duration-ms="14598">
+  <suite started-at="2026-06-25T12:59:17 IST" name="Default suite" finished-at="2026-06-25T12:59:40 IST" duration-ms="22752">
     <groups>
     </groups>
-    <test started-at="2026-06-24T18:03:20 IST" name="Default test" finished-at="2026-06-24T18:03:35 IST" duration-ms="14598">
-      <class name="LoginTest.deshBoadTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:LoginTest.deshBoadTest@3349e9bb]" started-at="2026-06-24T18:03:20 IST" name="setup" finished-at="2026-06-24T18:03:28 IST" duration-ms="8048" status="PASS">
+    <test started-at="2026-06-25T12:59:17 IST" name="Default test" finished-at="2026-06-25T12:59:40 IST" duration-ms="22752">
+      <class name="LoginTest.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:LoginTest.LoginTest@31304f14]" started-at="2026-06-25T12:59:17 IST" name="setup" finished-at="2026-06-25T12:59:26 IST" duration-ms="8824" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="dealertTest()[pri:0, instance:LoginTest.deshBoadTest@3349e9bb]" started-at="2026-06-24T18:03:28 IST" name="dealertTest" finished-at="2026-06-24T18:03:35 IST" duration-ms="6184" status="FAIL">
-          <exception class="com.microsoft.playwright.PlaywrightException">
+        <test-method signature="verifyLogin()[pri:0, instance:LoginTest.LoginTest@31304f14]" started-at="2026-06-25T12:59:26 IST" name="verifyLogin" finished-at="2026-06-25T12:59:31 IST" duration-ms="4603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="teardwon()[pri:0, instance:LoginTest.LoginTest@31304f14]" started-at="2026-06-25T12:59:31 IST" name="teardwon" finished-at="2026-06-25T12:59:31 IST" duration-ms="330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardwon -->
+      </class> <!-- LoginTest.LoginTest -->
+      <class name="LoginTest.deshBoadTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:LoginTest.deshBoadTest@5bf0d49]" started-at="2026-06-25T12:59:31 IST" name="setup" finished-at="2026-06-25T12:59:35 IST" duration-ms="3923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dealertTest()[pri:0, instance:LoginTest.deshBoadTest@5bf0d49]" started-at="2026-06-25T12:59:35 IST" name="dealertTest" finished-at="2026-06-25T12:59:39 IST" duration-ms="4594" status="FAIL">
+          <exception class="java.lang.IllegalMonitorStateException">
             <message>
-              <![CDATA[Error {
-  message='Error: strict mode violation: getByText("dealers") resolved to 2 elements:
-    1) <title>Dealers</title> aka getByText("Dealers", new Page.GetByTextOptions().setExact(true))
-    2) <span class="uppercase text-[12px] ">dealers</span> aka getByText("dealers", new Page.GetByTextOptions().setExact(true))
-
-  name='Error
-  stack='Error: Error: strict mode violation: getByText("dealers") resolved to 2 elements:
-    1) <title>Dealers</title> aka getByText("Dealers", new Page.GetByTextOptions().setExact(true))
-    2) <span class="uppercase text-[12px] ">dealers</span> aka getByText("dealers", new Page.GetByTextOptions().setExact(true))
-
-    at CRExecutionContext.evaluateWithArguments (C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\server\chromium\crExecutionContext.js:79:33)
-    at async LongStandingScope._race (C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\utils\manualPromise.js:96:14)
-    at async evaluateExpression (C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\server\javascript.js:229:12)
-    at async C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\server\frames.js:965:22
-    at async Frame.retryWithProgressAndTimeouts (C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\server\frames.js:935:24)
-    at async C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\server\frames.js:1216:29
-    at async ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\server\progress.js:79:22)
-    at async FrameDispatcher.check (C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\server\dispatchers\frameDispatcher.js:255:12)
-    at async LongStandingScope._race (C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\utils\manualPromise.js:96:14)
-    at async FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\server\dispatchers\dispatcher.js:96:14)
-}
-Call log:
--   - waiting for getByText("dealers")
-]]>
+              <![CDATA[current thread is not owner]]>
             </message>
             <full-stacktrace>
-              <![CDATA[com.microsoft.playwright.PlaywrightException: Error {
-  message='Error: strict mode violation: getByText("dealers") resolved to 2 elements:
-    1) <title>Dealers</title> aka getByText("Dealers", new Page.GetByTextOptions().setExact(true))
-    2) <span class="uppercase text-[12px] ">dealers</span> aka getByText("dealers", new Page.GetByTextOptions().setExact(true))
-
-  name='Error
-  stack='Error: Error: strict mode violation: getByText("dealers") resolved to 2 elements:
-    1) <title>Dealers</title> aka getByText("Dealers", new Page.GetByTextOptions().setExact(true))
-    2) <span class="uppercase text-[12px] ">dealers</span> aka getByText("dealers", new Page.GetByTextOptions().setExact(true))
-
-    at CRExecutionContext.evaluateWithArguments (C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\server\chromium\crExecutionContext.js:79:33)
-    at async LongStandingScope._race (C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\utils\manualPromise.js:96:14)
-    at async evaluateExpression (C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\server\javascript.js:229:12)
-    at async C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\server\frames.js:965:22
-    at async Frame.retryWithProgressAndTimeouts (C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\server\frames.js:935:24)
-    at async C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\server\frames.js:1216:29
-    at async ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\server\progress.js:79:22)
-    at async FrameDispatcher.check (C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\server\dispatchers\frameDispatcher.js:255:12)
-    at async LongStandingScope._race (C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\utils\manualPromise.js:96:14)
-    at async FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\server\dispatchers\dispatcher.js:96:14)
-}
-Call log:
--   - waiting for getByText("dealers")
-
-at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
-at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
-at com.microsoft.playwright.impl.FrameImpl.checkImpl(FrameImpl.java:233)
-at com.microsoft.playwright.impl.FrameImpl.lambda$check$7(FrameImpl.java:224)
-at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
-at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
-at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-at com.microsoft.playwright.impl.FrameImpl.check(FrameImpl.java:224)
-at com.microsoft.playwright.impl.LocatorImpl.check(LocatorImpl.java:162)
-at com.microsoft.playwright.Locator.check(Locator.java:2380)
-at pageclass.deshBoadPage.dealerpage(deshBoadPage.java:33)
-at LoginTest.deshBoadTest.dealertTest(deshBoadTest.java:22)
+              <![CDATA[java.lang.IllegalMonitorStateException: current thread is not owner
+at java.base/java.lang.Object.wait(Native Method)
+at pageclass.deshBoadPage.<init>(deshBoadPage.java:25)
+at LoginTest.deshBoadTest.dealertTest(deshBoadTest.java:20)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -107,41 +63,13 @@ at org.testng.TestNG.run(TestNG.java:1079)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message='Error: strict mode violation: getByText("dealers") resolved to 2 elements:
-    1) <title>Dealers</title> aka getByText("Dealers", new Page.GetByTextOptions().setExact(true))
-    2) <span class="uppercase text-[12px] ">dealers</span> aka getByText("dealers", new Page.GetByTextOptions().setExact(true))
-
-  name='Error
-  stack='Error: Error: strict mode violation: getByText("dealers") resolved to 2 elements:
-    1) <title>Dealers</title> aka getByText("Dealers", new Page.GetByTextOptions().setExact(true))
-    2) <span class="uppercase text-[12px] ">dealers</span> aka getByText("dealers", new Page.GetByTextOptions().setExact(true))
-
-    at CRExecutionContext.evaluateWithArguments (C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\server\chromium\crExecutionContext.js:79:33)
-    at async LongStandingScope._race (C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\utils\manualPromise.js:96:14)
-    at async evaluateExpression (C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\server\javascript.js:229:12)
-    at async C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\server\frames.js:965:22
-    at async Frame.retryWithProgressAndTimeouts (C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\server\frames.js:935:24)
-    at async C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\server\frames.js:1216:29
-    at async ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\server\progress.js:79:22)
-    at async FrameDispatcher.check (C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\server\dispatchers\frameDispatcher.js:255:12)
-    at async LongStandingScope._race (C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\utils\manualPromise.js:96:14)
-    at async FrameDispatcher._handleCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-14984990251912509552\package\lib\server\dispatchers\dispatcher.js:96:14)
-}
-Call log:
--   - waiting for getByText("dealers")
-
-at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
-at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
-... 41 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
+          </exception> <!-- java.lang.IllegalMonitorStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dealertTest -->
-        <test-method is-config="true" signature="teardwon()[pri:0, instance:LoginTest.deshBoadTest@3349e9bb]" started-at="2026-06-24T18:03:35 IST" name="teardwon" finished-at="2026-06-24T18:03:35 IST" duration-ms="311" status="PASS">
+        <test-method is-config="true" signature="teardwon()[pri:0, instance:LoginTest.deshBoadTest@5bf0d49]" started-at="2026-06-25T12:59:39 IST" name="teardwon" finished-at="2026-06-25T12:59:40 IST" duration-ms="425" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardwon -->

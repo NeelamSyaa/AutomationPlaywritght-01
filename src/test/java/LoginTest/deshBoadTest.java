@@ -12,7 +12,7 @@ public class deshBoadTest  extends BaseTest {
 	deshBoadPage dp;
 	ConfigReader  cg;
 	@Test
-	public void dealertTest() {
+	public void dealertTest() throws InterruptedException {
 		
 		  cg = new ConfigReader();
 		 lp = new LoginPage(page);
